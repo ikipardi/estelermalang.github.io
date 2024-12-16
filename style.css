@@ -19,3 +19,34 @@ body {
 h1, h2, p {
     margin: 10px 0;
 }
+a {
+    text-decoration: none;
+    color: #28a745;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+a img {
+    border: none;
+}
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 600px) {
+    .header, .footer {
+        padding: 10px;
+    }
+    .content {
+        padding: 10px;
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+    .map {
+        margin: 10px 0;
+    }
+    a {
+        flex-direction: column;
+        text-align: center;
+    }
+}
